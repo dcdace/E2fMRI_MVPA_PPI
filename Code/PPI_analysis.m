@@ -45,7 +45,7 @@ for day = 1 : 2 % analyse each scan day separately
             P.subject       = subject;
             P.directory     = fullfile(dirStudy, subject, [dirSPM num2str(day)]);
             P.VOI           = fullfile(dirStudy, dirROIs, subject, [ROIfname{r} '.nii']);
-            P.Region        = ROIfname{r};
+            P.Region        = ['PPI_PostDiff' ROIfname{r}];
             P.analysis      = 'psy';
             P.method        = 'cond';
             
