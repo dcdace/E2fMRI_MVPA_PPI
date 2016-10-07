@@ -1,6 +1,6 @@
 # import BehaviouralResults.csv
 # behData <- read.csv(file.choose(), header = T) 
-behData <- read.csv(file = "T:/_CogNeurPhD/02-Experiment/Report/BehaviouralResults.csv", header = T) 
+behData <- read.csv(file = "../BehaviouralResults.csv", header = T) 
 
 # Execution time differences pre- and post-training
 behData$preDiffET <- (behData$ETPreTR - behData$ETPreUN)
