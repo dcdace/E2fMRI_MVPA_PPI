@@ -1,7 +1,7 @@
 % Runs PPI analysis using gPPI Toolbox https://www.nitrc.org/projects/gppi
 %
 % FILE STRUCTURE
-% -driStudy
+% -dirStudy
 %   -dirROIs
 %       -subject1
 %           -ROIfname(s)
