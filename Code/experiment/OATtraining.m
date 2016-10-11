@@ -52,10 +52,10 @@ else
         theKb = GetKeyboard(0);
     end
     KbName('UnifyKeyNames');
-    keyUpper = KbName('b'); % yes
-    keyLower = KbName('m'); % no
-    keyT = KbName('t');
-    keylist = ones(1,256); % create a list of 256 zeros
+    keyUpper    = KbName('b'); % yes
+    keyLower    = KbName('m'); % no
+    keyT        = KbName('t');
+    keylist     = ones(1,256); % create a list of 256 zeros
     
     KbQueueCreate(theKb,keylist); %Make kb queue
     %% =====================================================
@@ -66,8 +66,8 @@ else
     black = [0 0 0];
     
     ScreenColor = grey;
-    TextColor = black;
-    ScreenID = max(Screen('Screens'));
+    TextColor   = black;
+    ScreenID    = max(Screen('Screens'));
     
     [win, rect]= Screen('OpenWindow',ScreenID, ScreenColor); % full screen
     %[win, rect]= Screen('OpenWindow',ScreenID, ScreenColor, [0 0 1000 500]); % 1000x750 screen
