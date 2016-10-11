@@ -86,43 +86,6 @@ for subjNr = 1 : size(parameters.name_subj,2); % for each participant
     % run batch
     spm_jobman('run', job);
     
-    %% COREGISTER ar files WITH EPI template
-%    clear job
-    
-%     % use realigned files (prefix ar)
-%     datafiles_ar = [];
-%     for sess    = 1:parameters.n_sess
-%         for scan_nr = 1 : parameters.n_scans
-%             niifile_ar = dir([dir_scans{sess} filesep 'ar*.nii']); % find the nii file in the functiona/runx directory
-%             
-%             niifile_ar_names{scan_nr,1} = [dir_scans{sess} filesep niifile_ar(1).name ',' num2str(scan_nr)]; % if there are more then one nii file, will take the first one
-%         end
-%         datafiles_ar = [datafiles_ar; niifile_ar_names];
-%     end
-%     job{1}.spm.spatial.coreg.estwrite.ref = {'/Applications/spm8/templates/EPI.nii,1'};
-%     % reference file
-%     mean_niifile = dir([dir_scans{1} filesep 'mean*.nii']); % usually saved in the first session (run01) folder
-%     mean_niifile = {[dir_scans{1} filesep mean_niifile.name ',1']};
-%     job{1}.spm.spatial.coreg.estwrite.source = mean_niifile;
-%     
-%     job{1}.spm.spatial.coreg.estwrite.other = datafiles_ar;
-%     
-%     job{1}.spm.spatial.coreg.estwrite.eoptions.cost_fun = 'nmi';
-%     job{1}.spm.spatial.coreg.estwrite.eoptions.sep = [4 2];
-%     job{1}.spm.spatial.coreg.estwrite.eoptions.tol = [0.02 0.02 0.02 0.001 0.001 0.001 0.01 0.01 0.01 0.001 0.001 0.001];
-%     job{1}.spm.spatial.coreg.estwrite.eoptions.fwhm = [7 7];
-%     job{1}.spm.spatial.coreg.estwrite.roptions.interp = 4;
-%     job{1}.spm.spatial.coreg.estwrite.roptions.wrap = [0 0 0];
-%     job{1}.spm.spatial.coreg.estwrite.roptions.mask = 0;
-%     job{1}.spm.spatial.coreg.estwrite.roptions.prefix = 'r';
-%     
-%     % save batch file for review
-%     savefile = [dir_subj filesep 'coregwithEPI', parameters.name_subj{subjNr}];
-%     save(savefile,'job')
-%     
-%     % run batch
-%     spm_jobman('run', job);
-    
     %% COREGISTRATION (anatomical to functional)
     clear job
     
