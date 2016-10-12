@@ -1,4 +1,5 @@
 % calculate pretetst-posttest regression intercept at the 1st Level
+% contact: dace@dcdace.net
 
 clear
 
