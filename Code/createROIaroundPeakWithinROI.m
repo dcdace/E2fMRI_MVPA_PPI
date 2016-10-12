@@ -1,3 +1,4 @@
+% Uses SPM Marsbar toolbox
 % Creates a ROI around subject's peak of the sepcified contrast within group ROI
 % Uses SPM Marsbar toolbox
 % contact: dace@dcdace.net
