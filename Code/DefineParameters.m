@@ -1,3 +1,5 @@
+% contact: dace@dcdace.net
+
 function parameters = DefineParameters
 
 % == Main Directories
