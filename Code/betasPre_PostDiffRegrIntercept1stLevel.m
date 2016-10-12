@@ -1,5 +1,6 @@
 % calculate pre-scan diff (x-value) between 2 condition and post-scan diff (y-value) regression intercept at the 1st Level
 % intercept gives the predicted post-diff if pre-diff is zero
+% contact: dace@dcdace.net
 
 clear
 
