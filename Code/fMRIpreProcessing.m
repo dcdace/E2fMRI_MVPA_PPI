@@ -1,3 +1,5 @@
+% fMRI preprocessing using SPM
+% contact: dace@dcdace.net
 
 parameters = DefineParameters;
 
