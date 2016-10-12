@@ -119,7 +119,7 @@ for subj = 1 : length(subjects)
         
         % specify nii file names
         TimgFileVol(1).fname    = fullfile(dirRes, [subjects{subj} '_PrePostRegressionTvalue.nii']); % t-values. Same as spmT_0001.nii files
-        BetaimgFileVol(1).fname = fullfile(dirRes, [subjects{subj} '_PrePostRegressionIntercept.nii']); % intercept values, similar tp con_0001.nii files. These are used for group analysis
+        BetaimgFileVol(1).fname = fullfile(dirRes, [subjects{subj} '_PrePostRegressionIntercept.nii']); % intercept values, similar to con_0001.nii files. These are used for group analysis
         PvalimgFileVol(1).fname = fullfile(dirRes, [subjects{subj} '_PrePostRegressionPvalue.nii']); % p-values. Not necessary to create them. 
         
         % write nii files
