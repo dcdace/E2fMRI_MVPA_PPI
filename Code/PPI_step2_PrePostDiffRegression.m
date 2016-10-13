@@ -24,7 +24,7 @@ subjects = {'02','03','05','06','07','08','09','10','11','13','14','15','17','18
 spm_progress_bar('Init',100);
 
 % load all files
-for roi = 1 : 1%length(ROIfname)
+for roi = 1 : length(ROIfname)
     % will only use voxels that fall into the group mask
     mask = fullfile(dirStudy, 'PPI_GroupResults_PostDiffRegrPeak', ROIfname{roi}, 'Day2OA_UN', 'mask.nii');
     VolMask = spm_vol(mask);
