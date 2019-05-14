@@ -1,1 +1,1 @@
-Apšvalka D, Cross ES, Ramsey R (2018) Observing Action Sequences Elicits Sequence-Specific Neural Representations in Frontoparietal Brain Regions. The Journal of neuroscience : the official journal of the Society for Neuroscience 38:10114–10128 doi:10.1523/JNEUROSCI.1597-18.2018.
+Apšvalka, D., Cross, E. S., & Ramsey, R. (2018). Observing action sequences elicits sequence-specific neural representations in frontoparietal brain regions. Journal of Neuroscience, 38 (47), 10114-10128. https://doi.org/10.1523/JNEUROSCI.1597-18.2018
